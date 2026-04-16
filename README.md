@@ -77,6 +77,24 @@ Run linting:
 npm run lint
 ```
 
+Run TypeScript checks:
+
+```bash
+npm run typecheck
+```
+
+Run tests:
+
+```bash
+npm test
+```
+
+Run all code checks:
+
+```bash
+npm run check
+```
+
 Preview the production build:
 
 ```bash
