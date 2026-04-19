@@ -1,0 +1,50 @@
+.menuToggle {
+  display: none;
+
+  @media (max-width: 640px) {
+    align-items: center;
+    background: #16211f;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 4px;
+    height: 42px;
+    justify-content: center;
+    padding: 0;
+    transition:
+      background-color 160ms ease,
+      transform 160ms ease;
+    width: 42px;
+
+    &:hover {
+      background: #27423b;
+    }
+  }
+}
+
+.line {
+  background: #ffffff;
+  border-radius: 999px;
+  display: block;
+  height: 2px;
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+  width: 18px;
+}
+
+.open {
+  .line:first-child {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .line:last-child {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+}
