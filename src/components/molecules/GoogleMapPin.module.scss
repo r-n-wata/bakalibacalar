@@ -1,0 +1,31 @@
+.mapShell {
+  background: #fbfaf6;
+  border: 1px solid #d7ddd4;
+  border-radius: 8px;
+  min-height: 180px;
+  overflow: hidden;
+}
+
+.mapCanvas {
+  height: 100%;
+  min-height: 180px;
+  width: 100%;
+}
+
+.fallbackLabel {
+  font-size: 0.85rem;
+  font-weight: 800;
+  margin: 0 0 8px;
+}
+
+.fallbackText,
+.address {
+  color: #4d5c58;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.address {
+  margin-top: 12px;
+}
