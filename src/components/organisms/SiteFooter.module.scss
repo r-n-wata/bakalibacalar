@@ -1,0 +1,104 @@
+.siteFooter {
+  align-items: flex-start;
+  background: #eef4ef;
+  border-top: 1px solid #d7ddd4;
+  color: #16211f;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: minmax(220px, 1fr) auto auto minmax(220px, 320px);
+  padding: 36px clamp(20px, 6vw, 72px);
+
+  @media (max-width: 920px) {
+    grid-template-columns: minmax(220px, 1fr) auto auto;
+  }
+
+  @media (max-width: 760px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.brandBlock {
+  display: grid;
+  gap: 16px;
+}
+
+.brandLink {
+  align-items: center;
+  color: inherit;
+  display: inline-flex;
+  font-size: 1.25rem;
+  font-weight: 800;
+  gap: 10px;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.logoMark {
+  background: #fbfaf6;
+  border: 1px solid #d7ddd4;
+  border-radius: 8px;
+  height: 36px;
+  padding: 6px;
+  width: 36px;
+}
+
+.address {
+  color: #4d5c58;
+  font-size: 0.95rem;
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.footerNav,
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.socials {
+  justify-content: flex-end;
+
+  @media (max-width: 760px) {
+    justify-content: flex-start;
+  }
+}
+
+.locationMap {
+  width: 100%;
+
+  @media (max-width: 920px) {
+    grid-column: 1 / -1;
+  }
+}
+
+.footerLink {
+  border: 1px solid #c6d2ca;
+  border-radius: 8px;
+  color: inherit;
+  display: inline-flex;
+  font-weight: 800;
+  padding: 10px 12px;
+  text-decoration: none;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease;
+
+  &:hover {
+    background: #fbfaf6;
+    border-color: #aebdb4;
+    color: #16211f;
+  }
+}
+
+.socials .footerLink {
+  @media (max-width: 480px) {
+    font-size: 0.85rem;
+    padding: 8px 10px;
+  }
+}
