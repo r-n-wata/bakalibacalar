@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import styles from './MenuToggle.module.scss'
 
 type MenuToggleProps = {
@@ -7,6 +8,7 @@ type MenuToggleProps = {
 }
 
 export function MenuToggle({ isOpen, menuId, onClick }: MenuToggleProps) {
+  const { t } = useTranslation()
   const buttonClassName = isOpen
     ? `${styles.menuToggle} ${styles.open}`
     : styles.menuToggle
@@ -17,7 +19,9 @@ export function MenuToggle({ isOpen, menuId, onClick }: MenuToggleProps) {
       type="button"
       aria-controls={menuId}
       aria-expanded={isOpen}
-      aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
+      aria-label={
+        isOpen ? t('navigation.menu.close') : t('navigation.menu.open')
+      }
       onClick={onClick}
     >
       <span className={styles.line} />

@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { NavLink } from 'react-router-dom'
 import styles from './SiteNavigation.module.scss'
 
@@ -19,12 +20,13 @@ export function SiteNavigation({
   items,
   onNavigate,
 }: SiteNavigationProps) {
+  const { t } = useTranslation()
   const navClassName = isOpen
     ? `${styles.siteNavigation} ${styles.open}`
     : styles.siteNavigation
 
   return (
-    <nav className={navClassName} id={id} aria-label="Main navigation">
+    <nav className={navClassName} id={id} aria-label={t('navigation.mainLabel')}>
       {items.map((item) => (
         <NavLink
           className={({ isActive }) =>

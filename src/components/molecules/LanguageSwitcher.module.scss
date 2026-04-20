@@ -1,0 +1,42 @@
+.languageSwitcher {
+  align-items: center;
+  border: 1px solid #c6d2ca;
+  border-radius: 8px;
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.button {
+  background: transparent;
+  border: 0;
+  color: #4d5c58;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 800;
+  min-width: 44px;
+  padding: 8px 10px;
+  transition:
+    background-color 160ms ease,
+    color 160ms ease;
+
+  &:hover {
+    background: #eef4ef;
+    color: #16211f;
+  }
+}
+
+.active {
+  background: #dbe8df;
+  color: #16211f;
+}
+
+.screenReaderText {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

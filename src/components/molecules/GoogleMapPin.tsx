@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import styles from './GoogleMapPin.module.scss'
 
 type LatLngLiteral = {
@@ -93,6 +94,7 @@ export function GoogleMapPin({
   label,
   position,
 }: GoogleMapPinProps) {
+  const { t } = useTranslation()
   const mapRef = useRef<HTMLDivElement>(null)
   const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY
   const status = apiKey ? 'idle' : 'missing-key'
@@ -151,9 +153,9 @@ export function GoogleMapPin({
   if (status === 'missing-key') {
     return (
       <div className={classNames}>
-        <p className={styles.fallbackLabel}>Map location</p>
+        <p className={styles.fallbackLabel}>{t('map.location')}</p>
         <p className={styles.fallbackText}>
-          Add VITE_GOOGLE_MAPS_API_KEY to show the Google map pin.
+          {t('map.missingKey')}
         </p>
         <p className={styles.address}>{address}</p>
       </div>
@@ -163,7 +165,7 @@ export function GoogleMapPin({
   if (hasError) {
     return (
       <div className={classNames}>
-        <p className={styles.fallbackLabel}>Map unavailable</p>
+        <p className={styles.fallbackLabel}>{t('map.unavailable')}</p>
         <p className={styles.address}>{address}</p>
       </div>
     )
@@ -172,7 +174,7 @@ export function GoogleMapPin({
   return (
     <div className={classNames}>
       <div
-        aria-label={`${label}: ${address}`}
+        aria-label={t('map.ariaLabel', { address, label })}
         className={styles.mapCanvas}
         ref={mapRef}
         role="img"

@@ -1,11 +1,12 @@
+import { useTranslation } from 'react-i18next'
 import { PageSection } from '../components/templates/PageSection'
 
 export function Home() {
+  const { t } = useTranslation()
+
   return (
-    <PageSection eyebrow="Home" title="Welcome to Bakali.">
-      <p>
-        Thoughtful services, clear communication, and a calm place to begin.
-      </p>
+    <PageSection eyebrow={t('pages.home.eyebrow')} title={t('pages.home.title')}>
+      <p>{t('pages.home.body')}</p>
     </PageSection>
   )
 }

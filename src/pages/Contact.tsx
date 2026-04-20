@@ -1,12 +1,15 @@
+import { useTranslation } from 'react-i18next'
 import { PageSection } from '../components/templates/PageSection'
 
 export function Contact() {
+  const { t } = useTranslation()
+
   return (
-    <PageSection eyebrow="Contact" title="Let's talk.">
-      <p>
-        Reach out with a question, a project, or the first rough shape of an
-        idea.
-      </p>
+    <PageSection
+      eyebrow={t('pages.contact.eyebrow')}
+      title={t('pages.contact.title')}
+    >
+      <p>{t('pages.contact.body')}</p>
     </PageSection>
   )
 }

@@ -1,12 +1,15 @@
+import { useTranslation } from 'react-i18next'
 import { PageSection } from '../components/templates/PageSection'
 
 export function Services() {
+  const { t } = useTranslation()
+
   return (
-    <PageSection eyebrow="Services" title="Support for what comes next.">
-      <p>
-        Explore flexible services designed to meet real needs without making
-        the process heavier than it has to be.
-      </p>
+    <PageSection
+      eyebrow={t('pages.services.eyebrow')}
+      title={t('pages.services.title')}
+    >
+      <p>{t('pages.services.body')}</p>
     </PageSection>
   )
 }
