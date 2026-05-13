@@ -1,4 +1,6 @@
 import type { ReactNode } from 'react'
+import { ContentPanel } from '../atoms/ContentPanel'
+import { SectionLabel } from '../atoms/SectionLabel'
 import styles from './PageSection.module.scss'
 
 type PageSectionProps = {
@@ -9,10 +11,10 @@ type PageSectionProps = {
 
 export function PageSection({ children, eyebrow, title }: PageSectionProps) {
   return (
-    <section className={styles.pageSection}>
-      <p className={styles.eyebrow}>{eyebrow}</p>
+    <ContentPanel as="section" className={styles.pageSection}>
+      <SectionLabel className={styles.eyebrow}>{eyebrow}</SectionLabel>
       <h1 className={styles.title}>{title}</h1>
       <div className={styles.content}>{children}</div>
-    </section>
+    </ContentPanel>
   )
 }

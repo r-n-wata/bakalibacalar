@@ -4,6 +4,7 @@ export const en = {
   },
   brand: {
     name: 'Bakali',
+    tagline: 'Montessori in Bacalar',
   },
   navigation: {
     mainLabel: 'Main navigation',
@@ -26,24 +27,178 @@ export const en = {
   },
   pages: {
     home: {
-      eyebrow: 'Home',
-      title: 'Welcome to Bakali.',
-      body: 'Thoughtful services, clear communication, and a calm place to begin.',
+      eyebrow: 'Montessori school in Bacalar',
+      title: 'A warm, prepared environment for children from early years to secondary.',
+      body: 'Bakali is a Montessori school in Bacalar, Quintana Roo, designed for focused learning, joyful independence, and a strong sense of community.',
+      intro:
+        'The site now speaks more clearly to families: calm spaces, bilingual support, mixed-age learning, and a rhythm that respects each stage of development.',
+      ctaPrimary: 'Book a visit',
+      ctaSecondary: 'Explore programs',
+      imageLabel: 'Placeholder campus image',
+      imageCaption:
+        'Placeholder visual for the Bacalar campus, with gardens, open-air circulation, and classroom light inspired by the lagoon.',
+      highlights: [
+        {
+          value: '18 months+',
+          label: 'From toddler to secondary',
+          description:
+            'A continuous educational journey with spaces and guides adapted to each plane of development.',
+        },
+        {
+          value: 'Bilingual',
+          label: 'Spanish and English',
+          description:
+            'Daily communication and classroom experiences that help children move naturally between both languages.',
+        },
+        {
+          value: 'Prepared',
+          label: 'Environment first',
+          description:
+            'Materials, routines, and adult guidance are arranged to support concentration, autonomy, and respect.',
+        },
+      ],
+      programsTitle: 'Programs shaped around development',
+      programs: [
+        {
+          title: 'Children’s House',
+          description:
+            'For the early years, with practical life, sensorial work, movement, language, and a gentle transition into community.',
+        },
+        {
+          title: 'Lower Elementary',
+          description:
+            'Long work cycles, collaborative exploration, and foundational academic work presented through stories and materials.',
+        },
+        {
+          title: 'Upper Elementary',
+          description:
+            'Research, projects, responsibility, and increasing independence as children begin to connect ideas across disciplines.',
+        },
+        {
+          title: 'Secondary',
+          description:
+            'Adolescent work that combines academic rigor, real-world projects, and a strong social experience rooted in place.',
+        },
+      ],
+      promiseTitle: 'Built for calm, confident growth',
+      promise:
+        'Families are looking for more than classrooms. They are looking for a school culture. Bakali presents itself as thoughtful, grounded, and local to Bacalar, with an identity that feels both nurturing and academically serious.',
     },
     about: {
-      eyebrow: 'About',
-      title: 'Built with care.',
-      body: 'Bakali is shaped around dependable work, direct conversations, and a practical path from idea to delivery.',
+      eyebrow: 'About Bakali',
+      title: 'A school rooted in Montessori principles and the pace of Bacalar.',
+      body: 'Bakali imagines learning as a relationship between child, guide, family, and environment. The school identity is calm, clear, and connected to the natural beauty of the region.',
+      imageLabel: 'Placeholder community image',
+      imageCaption:
+        'Placeholder visual for families gathering after class, with natural textures, shaded patios, and a welcoming campus rhythm.',
+      campusTitle: 'A campus that supports independence',
+      campusBody:
+        'The design language now reflects a school where materials are intentional, movement is welcomed, and children can feel both grounded and curious. Warm neutrals, lagoon blues, and plant-inspired greens help the experience feel local instead of generic.',
+      principlesTitle: 'Core principles',
+      principles: [
+        {
+          title: 'Respect for the child',
+          description:
+            'Children are treated as capable people whose work, concentration, and developmental timing deserve real attention.',
+        },
+        {
+          title: 'Prepared adults',
+          description:
+            'Guides observe carefully, intervene with purpose, and protect the conditions children need to work deeply.',
+        },
+        {
+          title: 'Community partnership',
+          description:
+            'Families are welcomed as partners through clear communication, orientation, and shared expectations.',
+        },
+      ],
     },
     services: {
-      eyebrow: 'Services',
-      title: 'Support for what comes next.',
-      body: 'Explore flexible services designed to meet real needs without making the process heavier than it has to be.',
+      eyebrow: 'Programs and services',
+      title: 'Support that goes beyond classroom hours.',
+      body: 'The services page now reads like a real school offer: age levels, enrichment, family support, and the structure parents want to understand before they inquire.',
+      imageLabel: 'Placeholder exploration image',
+      imageCaption:
+        'Placeholder visual for science, art, and outdoor exploration, showing older students working collaboratively.',
+      servicesTitle: 'What families can expect',
+      services: [
+        {
+          title: 'Montessori classrooms',
+          description:
+            'Mixed-age communities with uninterrupted work cycles, hands-on materials, and guidance matched to each age band.',
+        },
+        {
+          title: 'Bilingual learning environment',
+          description:
+            'Daily exposure to Spanish and English through conversation, work presentations, stories, and community routines.',
+        },
+        {
+          title: 'Outdoor and place-based learning',
+          description:
+            'A Bacalar context that inspires observation, environmental care, movement, and meaningful connections to local life.',
+        },
+        {
+          title: 'Family onboarding',
+          description:
+            'Orientation, campus visits, and admissions conversations that help families understand Montessori before joining.',
+        },
+      ],
+      featuresTitle: 'Additional school rhythms',
+      features: [
+        {
+          title: 'A calm school day',
+          description:
+            'Arrival, work cycles, community meals, outdoor time, and reflection all contribute to a predictable rhythm children can trust.',
+        },
+        {
+          title: 'Creative and practical studios',
+          description:
+            'Art, music, handwork, and practical projects are positioned as part of whole-child development rather than extras.',
+        },
+        {
+          title: 'Adolescent responsibility',
+          description:
+            'Secondary students are invited into work that is academic, social, and increasingly connected to the real world.',
+        },
+        {
+          title: 'Transparent communication',
+          description:
+            'Families receive a clearer sense of expectations, process, and next steps before the first conversation even starts.',
+        },
+      ],
     },
     contact: {
-      eyebrow: 'Contact',
-      title: "Let's talk.",
-      body: 'Reach out with a question, a project, or the first rough shape of an idea.',
+      eyebrow: 'Contact and admissions',
+      title: 'Start with a visit, a question, or an admissions conversation.',
+      body: 'The contact experience now feels like a school front door: clear, welcoming, and ready for families who want to learn more about Montessori in Bacalar.',
+      imageLabel: 'Placeholder admissions image',
+      imageCaption:
+        'Placeholder visual for an admissions welcome desk with natural materials, student work, and printed school information.',
+      infoTitle: 'Visit or write to us',
+      details: [
+        'Bakali Montessori School',
+        'Bacalar, Quintana Roo, Mexico',
+        'Monday to Friday, 8:00 AM to 3:30 PM',
+        'hola@bakali.mx',
+      ],
+      stepsTitle: 'Admissions path',
+      steps: [
+        {
+          title: '1. Initial inquiry',
+          description:
+            'Families reach out with the child’s age, current school stage, and the questions they want answered first.',
+        },
+        {
+          title: '2. Campus visit',
+          description:
+            'A guided visit helps families understand the prepared environment, classroom flow, and the character of the community.',
+        },
+        {
+          title: '3. Next steps',
+          description:
+            'The school shares availability, admissions timing, and any follow-up needed to complete enrollment.',
+        },
+      ],
     },
     notFound: {
       eyebrow: '404',
@@ -53,7 +208,16 @@ export const en = {
     },
   },
   footer: {
-    address: ['123 Placeholder Street', 'Suite 100', 'Your City, ST 12345'],
+    address: [
+      'Bakali Montessori School',
+      'Bacalar, Quintana Roo',
+      'Mexico',
+    ],
+    visitLabel: 'Visit Bakali',
+    visit: [
+      'Campus tours by appointment.',
+      'A calm welcome for families exploring Montessori from early years through secondary.',
+    ],
     socialsLabel: 'Social links',
     socials: {
       instagram: 'Instagram',

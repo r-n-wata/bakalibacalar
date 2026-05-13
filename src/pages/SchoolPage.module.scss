@@ -1,0 +1,222 @@
+.page {
+  display: grid;
+  gap: clamp(32px, 5vw, 64px);
+}
+
+.hero,
+.pageHero,
+.storyGrid {
+  display: grid;
+  gap: clamp(20px, 3vw, 28px);
+}
+
+.hero,
+.pageHero {
+  align-items: stretch;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.95fr);
+
+  @media (max-width: 920px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.heroCopy {
+  padding: clamp(24px, 4vw, 36px);
+}
+
+.eyebrow,
+.sectionEyebrow,
+.highlightValue {
+  margin: 0;
+}
+
+.heroTitle,
+.pageTitle,
+.sectionHeading h2,
+.storyCard h2 {
+  color: #3d3127;
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia,
+    serif;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+.heroTitle {
+  font-size: clamp(2.6rem, 7vw, 4.6rem);
+  line-height: 0.98;
+  margin-top: 12px;
+}
+
+.pageTitle {
+  font-size: clamp(2.2rem, 6vw, 3.8rem);
+  line-height: 1;
+  margin-top: 12px;
+}
+
+.heroLead,
+.heroSupport,
+.pageLead,
+.contentCard p,
+.featureCard p,
+.storyCard p,
+.highlightCard p {
+  color: #6a5a4c;
+  font-size: 1.02rem;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.heroLead,
+.pageLead {
+  color: #514336;
+  font-size: clamp(1.02rem, 1.8vw, 1.18rem);
+  margin-top: 18px;
+  max-width: 38rem;
+}
+
+.heroSupport {
+  margin-top: 14px;
+  max-width: 36rem;
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.secondaryAction {
+  background: rgba(255, 250, 245, 0.9);
+  color: #4c3b2f;
+}
+
+.highlightGrid,
+.cardGrid,
+.featureGrid {
+  display: grid;
+  gap: 18px;
+}
+
+.highlightGrid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 24px;
+
+  @media (max-width: 860px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.highlightCard {
+  padding: 16px;
+}
+
+.highlightLabel,
+.contentCard h3,
+.featureCard h3 {
+  color: #3d3127;
+  font-size: 1rem;
+  margin: 8px 0 6px;
+}
+
+.section {
+  display: grid;
+  gap: 20px;
+}
+
+.sectionHeading {
+  display: grid;
+  gap: 8px;
+  max-width: 38rem;
+}
+
+.sectionHeading h2,
+.storyCard h2 {
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  line-height: 1.05;
+}
+
+.cardGrid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  @media (max-width: 1080px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: 680px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contentCard,
+.featureCard,
+.storyCard {
+  padding: clamp(18px, 3vw, 24px);
+}
+
+.featureGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  @media (max-width: 760px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.storyGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  @media (max-width: 920px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.imageLagoon {
+  background:
+    linear-gradient(180deg, rgba(72, 58, 44, 0.1), rgba(72, 58, 44, 0.38)),
+    linear-gradient(140deg, #d7c8b5 0%, #b39a7e 100%);
+
+  &::before {
+    background: linear-gradient(180deg, rgba(72, 58, 44, 0.04), rgba(72, 58, 44, 0.34));
+  }
+}
+
+.imageClassroom {
+  background:
+    linear-gradient(180deg, rgba(72, 58, 44, 0.1), rgba(72, 58, 44, 0.38)),
+    linear-gradient(145deg, #dac9b2 0%, #b89573 100%);
+
+  &::before {
+    background: linear-gradient(180deg, rgba(72, 58, 44, 0.04), rgba(72, 58, 44, 0.34));
+  }
+}
+
+.imageCommunity {
+  background:
+    linear-gradient(180deg, rgba(72, 58, 44, 0.1), rgba(72, 58, 44, 0.38)),
+    linear-gradient(145deg, #d3c3ae 0%, #a98969 100%);
+
+  &::before {
+    background: linear-gradient(180deg, rgba(72, 58, 44, 0.04), rgba(72, 58, 44, 0.34));
+  }
+}
+
+.imageExploration {
+  background:
+    linear-gradient(180deg, rgba(72, 58, 44, 0.1), rgba(72, 58, 44, 0.38)),
+    linear-gradient(145deg, #d6c7b4 0%, #ae9173 100%);
+
+  &::before {
+    background: linear-gradient(180deg, rgba(72, 58, 44, 0.04), rgba(72, 58, 44, 0.34));
+  }
+}
+
+.imageAdmissions {
+  background:
+    linear-gradient(180deg, rgba(72, 58, 44, 0.1), rgba(72, 58, 44, 0.38)),
+    linear-gradient(145deg, #e0cfbe 0%, #b59275 100%);
+
+  &::before {
+    background: linear-gradient(180deg, rgba(72, 58, 44, 0.04), rgba(72, 58, 44, 0.34));
+  }
+}

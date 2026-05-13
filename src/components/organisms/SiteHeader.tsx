@@ -27,10 +27,10 @@ export function SiteHeader() {
   return (
     <header className={styles.siteHeader}>
       <NavLink className={styles.brandLink} to="/" onClick={closeMenu}>
-        {t('brand.name')}
+        <span className={styles.brandName}>{t('brand.name')}</span>
+        <span className={styles.brandTagline}>{t('brand.tagline')}</span>
       </NavLink>
       <div className={styles.headerControls}>
-        <LanguageSwitcher />
         <MenuToggle
           isOpen={isMenuOpen}
           menuId={navigationId}
@@ -42,6 +42,7 @@ export function SiteHeader() {
         isOpen={isMenuOpen}
         items={navItems}
         onNavigate={closeMenu}
+        trailingContent={<LanguageSwitcher />}
       />
     </header>
   )

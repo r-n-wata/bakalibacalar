@@ -1,34 +1,35 @@
 .languageSwitcher {
   align-items: center;
-  border: 1px solid #c6d2ca;
-  border-radius: 8px;
-  display: inline-flex;
-  overflow: hidden;
+  background: transparent;
+  border: 1px solid rgba(91, 68, 47, 0.12);
+  border-radius: 10px;
+  display: flex;
+  gap: 2px;
+  padding: 2px;
 }
 
 .button {
   background: transparent;
   border: 0;
-  color: #4d5c58;
+  border-radius: 8px;
+  color: #6a5a4c;
   cursor: pointer;
   font: inherit;
   font-size: 0.85rem;
-  font-weight: 800;
-  min-width: 44px;
-  padding: 8px 10px;
+  font-weight: 700;
+  padding: 7px 9px;
   transition:
     background-color 160ms ease,
     color 160ms ease;
 
   &:hover {
-    background: #eef4ef;
-    color: #16211f;
+    color: #3d3127;
   }
 }
 
 .active {
-  background: #dbe8df;
-  color: #16211f;
+  background: rgba(255, 255, 255, 0.55);
+  color: #3d3127;
 }
 
 .screenReaderText {

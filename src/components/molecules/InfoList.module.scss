@@ -1,0 +1,42 @@
+.infoList {
+  display: grid;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.row {
+  border-top: 1px solid rgba(134, 99, 72, 0.14);
+  padding-top: 18px;
+}
+
+.row:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.line {
+  border-bottom: 1px solid rgba(134, 99, 72, 0.12);
+  color: #6a5a4c;
+  font-size: 1.02rem;
+  line-height: 1.75;
+  margin: 0;
+  padding-bottom: 12px;
+}
+
+.line:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.title {
+  color: #3d3127;
+  font-size: 1.1rem;
+  margin: 10px 0 8px;
+}
+
+.description {
+  color: #6a5a4c;
+  font-size: 1.02rem;
+  line-height: 1.75;
+  margin: 0;
+}

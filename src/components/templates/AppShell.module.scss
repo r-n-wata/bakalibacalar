@@ -6,5 +6,6 @@
 
 .pageFrame {
   flex: 1;
-  padding: clamp(48px, 9vw, 120px) clamp(20px, 6vw, 72px);
+  padding: clamp(32px, 5vw, 56px) clamp(18px, 5vw, 48px)
+    clamp(64px, 9vw, 120px);
 }

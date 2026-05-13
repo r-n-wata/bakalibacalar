@@ -1,36 +1,48 @@
 .siteFooter {
-  align-items: flex-start;
-  background: #eef4ef;
-  border-top: 1px solid #d7ddd4;
-  color: #16211f;
+  align-items: stretch;
+  background: #efe7dc;
+  border-top: 1px solid rgba(91, 68, 47, 0.12);
+  color: #3d3127;
   display: grid;
-  gap: 32px;
-  grid-template-columns: minmax(220px, 1fr) auto auto minmax(220px, 320px);
-  padding: 36px clamp(20px, 6vw, 72px);
+  gap: 28px;
+  grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.9fr);
+  padding: 40px clamp(18px, 5vw, 48px);
 
-  @media (max-width: 920px) {
-    grid-template-columns: minmax(220px, 1fr) auto auto;
+  @media (max-width: 1040px) {
+    grid-template-columns: 1fr;
   }
+}
+
+.footerContent {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: minmax(0, 1.1fr) minmax(220px, auto);
+  grid-template-areas:
+    "brand meta"
+    "visit visit";
 
   @media (max-width: 760px) {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media (max-width: 560px) {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "brand"
+      "meta"
+      "visit";
   }
 }
 
 .brandBlock {
   display: grid;
   gap: 16px;
+  grid-area: brand;
 }
 
 .brandLink {
   align-items: center;
   color: inherit;
   display: inline-flex;
-  font-size: 1.25rem;
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia,
+    serif;
+  font-size: 1.45rem;
   font-weight: 800;
   gap: 10px;
   text-decoration: none;
@@ -38,19 +50,38 @@
 }
 
 .logoMark {
-  background: #fbfaf6;
-  border: 1px solid #d7ddd4;
+  align-items: center;
+  background: transparent;
+  border: 1px solid rgba(91, 68, 47, 0.14);
   border-radius: 8px;
+  color: #866348;
+  display: inline-flex;
+  font-family: "Avenir Next", Montserrat, "Segoe UI", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 800;
   height: 36px;
+  justify-content: center;
   padding: 6px;
   width: 36px;
 }
 
 .address {
-  color: #4d5c58;
+  color: #6a5a4c;
   font-size: 0.95rem;
   font-style: normal;
   line-height: 1.6;
+}
+
+.footerMeta {
+  align-content: start;
+  display: grid;
+  gap: 14px;
+  grid-area: meta;
+  justify-items: end;
+
+  @media (max-width: 760px) {
+    justify-items: start;
+  }
 }
 
 .footerNav,
@@ -68,21 +99,13 @@
   }
 }
 
-.locationMap {
-  width: 100%;
-
-  @media (max-width: 920px) {
-    grid-column: 1 / -1;
-  }
-}
-
 .footerLink {
-  border: 1px solid #c6d2ca;
+  border: 1px solid rgba(91, 68, 47, 0.14);
   border-radius: 8px;
   color: inherit;
   display: inline-flex;
-  font-weight: 800;
-  padding: 10px 12px;
+  font-weight: 700;
+  padding: 9px 11px;
   text-decoration: none;
   transition:
     background-color 160ms ease,
@@ -90,9 +113,8 @@
     color 160ms ease;
 
   &:hover {
-    background: #fbfaf6;
-    border-color: #aebdb4;
-    color: #16211f;
+    background: rgba(255, 255, 255, 0.42);
+    border-color: rgba(91, 68, 47, 0.24);
   }
 }
 
@@ -100,5 +122,36 @@
   @media (max-width: 480px) {
     font-size: 0.85rem;
     padding: 8px 10px;
+  }
+}
+
+.locationCard {
+  grid-area: visit;
+  padding: 24px;
+  width: 100%;
+}
+
+.locationLabel {
+  margin: 0 0 12px;
+}
+
+.locationText {
+  color: #6a5a4c;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.mapColumn {
+  min-width: 0;
+  width: 100%;
+}
+
+.locationMap {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+
+  @media (max-width: 1040px) {
+    min-height: 220px;
   }
 }

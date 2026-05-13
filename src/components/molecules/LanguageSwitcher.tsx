@@ -22,7 +22,9 @@ export function LanguageSwitcher() {
         return (
           <button
             aria-pressed={isActive}
-            className={isActive ? `${styles.button} ${styles.active}` : styles.button}
+            className={
+              isActive ? `${styles.button} ${styles.active}` : styles.button
+            }
             key={language}
             onClick={() => void i18n.changeLanguage(language)}
             type="button"

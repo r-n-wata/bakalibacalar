@@ -1,24 +1,23 @@
 .pageSection {
-  max-width: 760px;
+  max-width: 860px;
+  padding: clamp(28px, 5vw, 44px);
 }
 
 .eyebrow {
-  color: #3d6f5a;
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0;
-  margin: 0 0 14px;
-  text-transform: uppercase;
+  margin-bottom: 14px;
 }
 
 .title {
+  color: #3d3127;
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia,
+    serif;
   font-size: clamp(2.25rem, 6vw, 4.5rem);
-  line-height: 1;
+  line-height: 0.98;
   margin: 0;
 }
 
 .content {
-  color: #4d5c58;
+  color: #6a5a4c;
   font-size: 1.1rem;
   line-height: 1.7;
 

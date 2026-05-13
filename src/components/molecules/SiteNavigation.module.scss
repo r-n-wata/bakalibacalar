@@ -1,21 +1,25 @@
 .siteNavigation {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
 
   @media (max-width: 640px) {
     display: flex;
     flex-direction: column;
     grid-column: 1 / -1;
+    background: #f8f3ec;
+    border: 1px solid rgba(91, 68, 47, 0.1);
+    border-radius: 12px;
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    padding-top: 0;
+    padding: 0 12px;
     transform: translateY(-8px);
     transition:
       max-height 240ms ease,
       opacity 180ms ease,
-      padding-top 240ms ease,
+      padding 240ms ease,
       transform 240ms ease,
       visibility 240ms ease;
     visibility: hidden;
@@ -25,49 +29,66 @@
 
 .open {
   @media (max-width: 640px) {
-    max-height: 240px;
+    max-height: 360px;
     opacity: 1;
-    padding-top: 8px;
+    padding: 12px;
     transform: translateY(0);
     visibility: visible;
+  }
+}
+
+.trailingContent {
+  align-items: center;
+  border-left: 1px solid rgba(91, 68, 47, 0.12);
+  display: flex;
+  margin-left: 8px;
+  padding-left: 16px;
+
+  @media (max-width: 640px) {
+    align-self: stretch;
+    border-left: 0;
+    border-top: 1px solid rgba(91, 68, 47, 0.12);
+    margin-left: 0;
+    margin-top: 4px;
+    padding-left: 0;
+    padding-top: 12px;
+    width: 100%;
   }
 }
 
 .navLink {
   align-items: center;
   border-radius: 8px;
-  color: #4d5c58;
+  color: #6a5a4c;
   display: inline-flex;
-  font-weight: 700;
+  font-weight: 600;
   gap: 10px;
   justify-content: space-between;
-  padding: 8px 12px;
+  padding: 8px 10px;
   text-decoration: none;
   transition:
-    background-color 160ms ease,
-    color 160ms ease;
+    color 160ms ease,
+    background-color 160ms ease;
 
   &:hover {
-    background: #eef4ef;
-    color: #16211f;
+    background: rgba(255, 255, 255, 0.4);
+    color: #3d3127;
   }
 
   @media (max-width: 640px) {
+    border-radius: 10px;
     padding: 12px;
     width: 100%;
   }
 }
 
 .active {
-  background: #dbe8df;
-  color: #16211f;
+  background: transparent;
+  color: #3d3127;
+  text-decoration: underline;
+  text-underline-offset: 0.28em;
 
   &::after {
-    background: #3d6f5a;
-    border-radius: 999px;
-    content: "";
-    display: inline-flex;
-    height: 8px;
-    width: 8px;
+    display: none;
   }
 }
