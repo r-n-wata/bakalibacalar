@@ -30,31 +30,35 @@ export const en = {
       eyebrow: 'Montessori school in Bacalar',
       title: 'A warm, prepared environment for children from early years to secondary.',
       body: 'Bakali is a Montessori school in Bacalar, Quintana Roo, designed for focused learning, joyful independence, and a strong sense of community.',
-      intro:
-        'The site now speaks more clearly to families: calm spaces, bilingual support, mixed-age learning, and a rhythm that respects each stage of development.',
       ctaPrimary: 'Book a visit',
       ctaSecondary: 'Explore programs',
       imageLabel: 'Placeholder campus image',
       imageCaption:
         'Placeholder visual for the Bacalar campus, with gardens, open-air circulation, and classroom light inspired by the lagoon.',
+      imageLabelSecondary: 'Placeholder outdoor learning image',
+      imageCaptionSecondary:
+        'Reference visual for shaded outdoor work, movement, and calm transitions between classrooms.',
+      imageLabelTertiary: 'Placeholder prepared environment image',
+      imageCaptionTertiary:
+        'Reference visual for shelves, natural materials, and child-sized spaces arranged with intention.',
+      imageLabelQuaternary: 'Placeholder adolescent project image',
+      imageCaptionQuaternary:
+        'Reference visual for older students collaborating on practical, creative, and research-based work.',
       highlights: [
         {
           value: '18 months+',
           label: 'From toddler to secondary',
-          description:
-            'A continuous educational journey with spaces and guides adapted to each plane of development.',
+          description: '',
         },
         {
           value: 'Bilingual',
           label: 'Spanish and English',
-          description:
-            'Daily communication and classroom experiences that help children move naturally between both languages.',
+          description: '',
         },
         {
           value: 'Prepared',
           label: 'Environment first',
-          description:
-            'Materials, routines, and adult guidance are arranged to support concentration, autonomy, and respect.',
+          description: '',
         },
       ],
       programsTitle: 'Programs shaped around development',
@@ -82,7 +86,7 @@ export const en = {
       ],
       promiseTitle: 'Built for calm, confident growth',
       promise:
-        'Families are looking for more than classrooms. They are looking for a school culture. Bakali presents itself as thoughtful, grounded, and local to Bacalar, with an identity that feels both nurturing and academically serious.',
+        'A school identity rooted in calm spaces, local character, and clear academic purpose.',
     },
     about: {
       eyebrow: 'About Bakali',

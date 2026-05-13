@@ -21,10 +21,15 @@ type HomeContent = {
   ctaPrimary: string
   ctaSecondary: string
   eyebrow: string
+  imageCaptionSecondary: string
+  imageCaptionTertiary: string
+  imageCaptionQuaternary: string
   highlights: Highlight[]
   imageCaption: string
   imageLabel: string
-  intro: string
+  imageLabelQuaternary: string
+  imageLabelSecondary: string
+  imageLabelTertiary: string
   programs: Program[]
   programsTitle: string
   promise: string
@@ -45,7 +50,6 @@ export function Home() {
           <SectionLabel className={styles.eyebrow}>{content.eyebrow}</SectionLabel>
           <h1 className={styles.heroTitle}>{content.title}</h1>
           <p className={styles.heroLead}>{content.body}</p>
-          <p className={styles.heroSupport}>{content.intro}</p>
           <div className={styles.heroActions}>
             <TextLink to="/contact">{content.ctaPrimary}</TextLink>
             <TextLink className={styles.secondaryAction} to="/services">
@@ -64,17 +68,30 @@ export function Home() {
                   {highlight.value}
                 </SectionLabel>
                 <h2 className={styles.highlightLabel}>{highlight.label}</h2>
-                <p>{highlight.description}</p>
               </ContentPanel>
             ))}
           </div>
         </ContentPanel>
 
-        <PlaceholderPanel
-          className={`${styles.placeholderImage} ${styles.imageLagoon}`}
-          label={content.imageLabel}
-          caption={content.imageCaption}
-        />
+        <div className={styles.heroMedia}>
+          <PlaceholderPanel
+            className={`${styles.placeholderImage} ${styles.imageLagoon}`}
+            label={content.imageLabel}
+            caption={content.imageCaption}
+          />
+          <div className={styles.mediaPair}>
+            <PlaceholderPanel
+              className={`${styles.placeholderImage} ${styles.imageCommunity}`}
+              label={content.imageLabelSecondary}
+              caption={content.imageCaptionSecondary}
+            />
+            <PlaceholderPanel
+              className={`${styles.placeholderImage} ${styles.imageClassroom}`}
+              label={content.imageLabelTertiary}
+              caption={content.imageCaptionTertiary}
+            />
+          </div>
+        </div>
       </section>
 
       <section className={styles.section}>
@@ -98,7 +115,13 @@ export function Home() {
         </div>
       </section>
 
-      <section className={styles.storyGrid}>
+      <section className={styles.homeGallery}>
+        <PlaceholderPanel
+          ariaHidden
+          className={`${styles.placeholderImage} ${styles.imageExploration}`}
+          label={content.imageLabelQuaternary}
+          caption={content.imageCaptionQuaternary}
+        />
         <ContentPanel as="article" className={styles.storyCard}>
           <SectionLabel className={styles.sectionEyebrow}>
             {content.eyebrow}
@@ -108,8 +131,8 @@ export function Home() {
         </ContentPanel>
         <PlaceholderPanel
           ariaHidden
-          className={`${styles.placeholderImage} ${styles.imageClassroom}`}
-          label=""
+          className={`${styles.placeholderImage} ${styles.imageAdmissions}`}
+          label={content.imageLabelSecondary}
         />
       </section>
     </div>
