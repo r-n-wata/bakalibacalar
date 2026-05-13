@@ -30,31 +30,35 @@ export const es = {
       eyebrow: 'Escuela Montessori en Bacalar',
       title: 'Un ambiente calido y preparado para ninas, ninos y adolescentes.',
       body: 'Bakali es una escuela Montessori en Bacalar, Quintana Roo, creada para el aprendizaje con enfoque, la independencia alegre y un fuerte sentido de comunidad.',
-      intro:
-        'Ahora el sitio comunica mejor lo que buscan las familias: espacios tranquilos, acompanamiento bilingue, aprendizaje en comunidades mixtas y un ritmo que respeta cada etapa del desarrollo.',
       ctaPrimary: 'Agendar visita',
       ctaSecondary: 'Ver programas',
       imageLabel: 'Imagen de campus de referencia',
       imageCaption:
         'Visual de referencia para el campus en Bacalar, con jardines, circulacion abierta y luz natural inspirada en la laguna.',
+      imageLabelSecondary: 'Imagen de aprendizaje exterior de referencia',
+      imageCaptionSecondary:
+        'Visual de referencia para trabajo al aire libre, movimiento y transiciones tranquilas entre ambientes.',
+      imageLabelTertiary: 'Imagen de ambiente preparado de referencia',
+      imageCaptionTertiary:
+        'Visual de referencia para estanterias, materiales naturales y espacios a escala infantil organizados con intencion.',
+      imageLabelQuaternary: 'Imagen de proyecto adolescente de referencia',
+      imageCaptionQuaternary:
+        'Visual de referencia para estudiantes mayores colaborando en trabajo practico, creativo y de investigacion.',
       highlights: [
         {
           value: '18 meses+',
           label: 'De comunidad infantil a secundaria',
-          description:
-            'Un trayecto educativo continuo con espacios y guias adaptados a cada plano del desarrollo.',
+          description: '',
         },
         {
           value: 'Bilingue',
           label: 'Espanol e ingles',
-          description:
-            'Comunicacion diaria y experiencias de aula que ayudan a moverse con naturalidad entre ambos idiomas.',
+          description: '',
         },
         {
           value: 'Preparado',
           label: 'El ambiente primero',
-          description:
-            'Materiales, rutinas y acompanamiento adulto organizados para favorecer concentracion, autonomia y respeto.',
+          description: '',
         },
       ],
       programsTitle: 'Programas pensados desde el desarrollo',
@@ -82,7 +86,7 @@ export const es = {
       ],
       promiseTitle: 'Disenado para crecer con calma y confianza',
       promise:
-        'Las familias buscan mas que salones. Buscan una cultura escolar. Bakali se presenta como una escuela reflexiva, cercana y local a Bacalar, con una identidad que acompana y al mismo tiempo toma en serio lo academico.',
+        'Una identidad escolar arraigada en espacios tranquilos, caracter local y claridad academica.',
     },
     about: {
       eyebrow: 'Sobre Bakali',
