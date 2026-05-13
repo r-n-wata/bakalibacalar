@@ -1,3 +1,5 @@
+import type { ReactNode } from 'react'
+import { useTranslation } from 'react-i18next'
 import { NavLink } from 'react-router-dom'
 import styles from './SiteNavigation.module.scss'
 
@@ -11,6 +13,7 @@ type SiteNavigationProps = {
   isOpen: boolean
   items: NavigationItem[]
   onNavigate: () => void
+  trailingContent?: ReactNode
 }
 
 export function SiteNavigation({
@@ -18,13 +21,15 @@ export function SiteNavigation({
   isOpen,
   items,
   onNavigate,
+  trailingContent,
 }: SiteNavigationProps) {
+  const { t } = useTranslation()
   const navClassName = isOpen
     ? `${styles.siteNavigation} ${styles.open}`
     : styles.siteNavigation
 
   return (
-    <nav className={navClassName} id={id} aria-label="Main navigation">
+    <nav className={navClassName} id={id} aria-label={t('navigation.mainLabel')}>
       {items.map((item) => (
         <NavLink
           className={({ isActive }) =>
@@ -38,6 +43,9 @@ export function SiteNavigation({
           {item.label}
         </NavLink>
       ))}
+      {trailingContent ? (
+        <div className={styles.trailingContent}>{trailingContent}</div>
+      ) : null}
     </nav>
   )
 }

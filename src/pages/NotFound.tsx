@@ -1,13 +1,17 @@
+import { useTranslation } from 'react-i18next'
 import { TextLink } from '../components/atoms/TextLink'
 import { PageSection } from '../components/templates/PageSection'
 
 export function NotFound() {
+  const { t } = useTranslation()
+
   return (
-    <PageSection eyebrow="404" title="That page is not here.">
-      <p>The path may have moved, or it may not exist yet.</p>
-      <TextLink to="/">
-        Return home
-      </TextLink>
+    <PageSection
+      eyebrow={t('pages.notFound.eyebrow')}
+      title={t('pages.notFound.title')}
+    >
+      <p>{t('pages.notFound.body')}</p>
+      <TextLink to="/">{t('pages.notFound.returnHome')}</TextLink>
     </PageSection>
   )
 }
