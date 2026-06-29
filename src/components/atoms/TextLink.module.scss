@@ -1,10 +1,10 @@
 .textLink {
   display: inline-flex;
   align-items: center;
-  border: 1px solid rgba(91, 68, 47, 0.18);
+  border: 1px solid rgba(57, 175, 178, 0.2);
   border-radius: 10px;
-  background: transparent;
-  color: #3d3127;
+  background: #c9ece3;
+  color: #0b7178;
   font-weight: 700;
   padding: 11px 14px;
   text-decoration: none;
@@ -14,7 +14,7 @@
     color 160ms ease;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.45);
-    border-color: rgba(91, 68, 47, 0.28);
+    background: #b7e3dc;
+    border-color: rgba(11, 113, 120, 0.24);
   }
 }

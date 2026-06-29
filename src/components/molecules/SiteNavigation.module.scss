@@ -8,8 +8,8 @@
     display: flex;
     flex-direction: column;
     grid-column: 1 / -1;
-    background: #f8f3ec;
-    border: 1px solid rgba(91, 68, 47, 0.1);
+    background: #f6fbf8;
+    border: 1px solid rgba(57, 175, 178, 0.12);
     border-radius: 12px;
     max-height: 0;
     opacity: 0;
@@ -39,7 +39,7 @@
 
 .trailingContent {
   align-items: center;
-  border-left: 1px solid rgba(91, 68, 47, 0.12);
+  border-left: 1px solid rgba(57, 175, 178, 0.16);
   display: flex;
   margin-left: 8px;
   padding-left: 16px;
@@ -47,7 +47,7 @@
   @media (max-width: 640px) {
     align-self: stretch;
     border-left: 0;
-    border-top: 1px solid rgba(91, 68, 47, 0.12);
+    border-top: 1px solid rgba(57, 175, 178, 0.16);
     margin-left: 0;
     margin-top: 4px;
     padding-left: 0;
@@ -59,7 +59,7 @@
 .navLink {
   align-items: center;
   border-radius: 8px;
-  color: #6a5a4c;
+  color: #3d8d90;
   display: inline-flex;
   font-weight: 600;
   gap: 10px;
@@ -71,8 +71,8 @@
     background-color 160ms ease;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.4);
-    color: #3d3127;
+    background: rgba(201, 236, 227, 0.42);
+    color: #0b7178;
   }
 
   @media (max-width: 640px) {
@@ -84,7 +84,7 @@
 
 .active {
   background: transparent;
-  color: #3d3127;
+  color: #0b7178;
   text-decoration: underline;
   text-underline-offset: 0.28em;
 
