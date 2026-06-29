@@ -50,7 +50,7 @@
 .pageTitle,
 .sectionHeading h2,
 .storyCard h2 {
-  color: #3d3127;
+  color: #0b7178;
   font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia,
     serif;
   font-weight: 700;
@@ -77,7 +77,7 @@
 .featureCard p,
 .storyCard p,
 .highlightCard p {
-  color: #6a5a4c;
+  color: #3d8d90;
   font-size: 1.02rem;
   line-height: 1.75;
   margin: 0;
@@ -85,7 +85,7 @@
 
 .heroLead,
 .pageLead {
-  color: #514336;
+  color: #0b7178;
   font-size: clamp(1.02rem, 1.8vw, 1.18rem);
   margin-top: 18px;
   max-width: 38rem;
@@ -104,8 +104,8 @@
 }
 
 .secondaryAction {
-  background: rgba(255, 250, 245, 0.9);
-  color: #4c3b2f;
+  background: #eef6f0;
+  color: #0b7178;
 }
 
 .highlightGrid,
@@ -132,7 +132,7 @@
 .highlightLabel,
 .contentCard h3,
 .featureCard h3 {
-  color: #3d3127;
+  color: #0b7178;
   font-size: 1rem;
   margin: 8px 0 6px;
 }
@@ -199,50 +199,50 @@
 
 .imageLagoon {
   background:
-    linear-gradient(180deg, rgba(72, 58, 44, 0.1), rgba(72, 58, 44, 0.38)),
-    linear-gradient(140deg, #d7c8b5 0%, #b39a7e 100%);
+    linear-gradient(180deg, rgba(11, 113, 120, 0.12), rgba(11, 113, 120, 0.36)),
+    linear-gradient(140deg, #c5ebe5 0%, #4eb0b5 100%);
 
   &::before {
-    background: linear-gradient(180deg, rgba(72, 58, 44, 0.04), rgba(72, 58, 44, 0.34));
+    background: linear-gradient(180deg, rgba(201, 236, 227, 0.04), rgba(11, 113, 120, 0.28));
   }
 }
 
 .imageClassroom {
   background:
-    linear-gradient(180deg, rgba(72, 58, 44, 0.1), rgba(72, 58, 44, 0.38)),
-    linear-gradient(145deg, #dac9b2 0%, #b89573 100%);
+    linear-gradient(180deg, rgba(11, 113, 120, 0.12), rgba(11, 113, 120, 0.36)),
+    linear-gradient(145deg, #eef4d7 0%, #8fd1c4 100%);
 
   &::before {
-    background: linear-gradient(180deg, rgba(72, 58, 44, 0.04), rgba(72, 58, 44, 0.34));
+    background: linear-gradient(180deg, rgba(214, 216, 140, 0.06), rgba(11, 113, 120, 0.28));
   }
 }
 
 .imageCommunity {
   background:
-    linear-gradient(180deg, rgba(72, 58, 44, 0.1), rgba(72, 58, 44, 0.38)),
-    linear-gradient(145deg, #d3c3ae 0%, #a98969 100%);
+    linear-gradient(180deg, rgba(11, 113, 120, 0.12), rgba(11, 113, 120, 0.36)),
+    linear-gradient(145deg, #d7f2ec 0%, #68bfbd 100%);
 
   &::before {
-    background: linear-gradient(180deg, rgba(72, 58, 44, 0.04), rgba(72, 58, 44, 0.34));
+    background: linear-gradient(180deg, rgba(201, 236, 227, 0.04), rgba(11, 113, 120, 0.28));
   }
 }
 
 .imageExploration {
   background:
-    linear-gradient(180deg, rgba(72, 58, 44, 0.1), rgba(72, 58, 44, 0.38)),
-    linear-gradient(145deg, #d6c7b4 0%, #ae9173 100%);
+    linear-gradient(180deg, rgba(11, 113, 120, 0.12), rgba(11, 113, 120, 0.36)),
+    linear-gradient(145deg, #d0efe6 0%, #5eb5be 100%);
 
   &::before {
-    background: linear-gradient(180deg, rgba(72, 58, 44, 0.04), rgba(72, 58, 44, 0.34));
+    background: linear-gradient(180deg, rgba(201, 236, 227, 0.04), rgba(11, 113, 120, 0.28));
   }
 }
 
 .imageAdmissions {
   background:
-    linear-gradient(180deg, rgba(72, 58, 44, 0.1), rgba(72, 58, 44, 0.38)),
-    linear-gradient(145deg, #e0cfbe 0%, #b59275 100%);
+    linear-gradient(180deg, rgba(11, 113, 120, 0.12), rgba(11, 113, 120, 0.36)),
+    linear-gradient(145deg, #d9f0ea 0%, #78c3c0 100%);
 
   &::before {
-    background: linear-gradient(180deg, rgba(72, 58, 44, 0.04), rgba(72, 58, 44, 0.34));
+    background: linear-gradient(180deg, rgba(201, 236, 227, 0.04), rgba(11, 113, 120, 0.28));
   }
 }

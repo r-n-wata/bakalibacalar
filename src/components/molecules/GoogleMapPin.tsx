@@ -154,9 +154,7 @@ export function GoogleMapPin({
     return (
       <div className={classNames}>
         <p className={styles.fallbackLabel}>{t('map.location')}</p>
-        <p className={styles.fallbackText}>
-          {t('map.missingKey')}
-        </p>
+        <p className={styles.fallbackText}>{t('map.missingKey')}</p>
         <p className={styles.address}>{address}</p>
       </div>
     )

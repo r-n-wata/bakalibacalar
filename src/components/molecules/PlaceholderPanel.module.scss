@@ -1,5 +1,5 @@
 .panel {
-  color: #f8f0e7;
+  color: #f5fffd;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -8,7 +8,7 @@
   padding: clamp(18px, 3vw, 28px);
   position: relative;
   border-radius: 16px;
-  border: 1px solid rgba(91, 68, 47, 0.08);
+  border: 1px solid rgba(57, 175, 178, 0.14);
 
   &::before,
   &::after {
@@ -19,7 +19,7 @@
   }
 
   &::before {
-    background: linear-gradient(180deg, rgba(61, 49, 39, 0.04), rgba(61, 49, 39, 0.34));
+    background: linear-gradient(180deg, rgba(11, 113, 120, 0.04), rgba(11, 113, 120, 0.3));
   }
 
   &::after {
@@ -37,7 +37,7 @@
 }
 
 .caption {
-  color: #f8f0e7;
+  color: #f5fffd;
   font-size: 0.98rem;
   line-height: 1.6;
   margin: 0;

@@ -1,20 +1,20 @@
 :root {
-  color: #3d3127;
-  background: #f4efe7;
+  color: #0b7178;
+  background: #f9f8f4;
   font-family:
     "Avenir Next", Montserrat, "Segoe UI", sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --surface: #faf6f0;
-  --surface-strong: #f7f1e9;
-  --ink: #3d3127;
-  --muted: #6a5a4c;
-  --line: rgba(91, 68, 47, 0.12);
-  --accent: #866348;
-  --accent-soft: #ece2d6;
-  --gold: #c6a06f;
+  --surface: #f9fbf7;
+  --surface-strong: #eef6f0;
+  --ink: #0b7178;
+  --muted: #3d8d90;
+  --line: rgba(11, 113, 120, 0.14);
+  --accent: #39afb2;
+  --accent-soft: #c9ece3;
+  --gold: #d6d88c;
 }
 
 * {
@@ -26,7 +26,7 @@ html {
 }
 
 body {
-  background: #f4efe7;
+  background: #f9f8f4;
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
@@ -49,5 +49,5 @@ img {
 }
 
 ::selection {
-  background: rgba(134, 99, 72, 0.18);
+  background: rgba(57, 175, 178, 0.24);
 }

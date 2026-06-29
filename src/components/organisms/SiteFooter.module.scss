@@ -1,8 +1,8 @@
 .siteFooter {
   align-items: stretch;
-  background: #efe7dc;
-  border-top: 1px solid rgba(91, 68, 47, 0.12);
-  color: #3d3127;
+  background: #eff8f3;
+  border-top: 1px solid rgba(57, 175, 178, 0.16);
+  color: #0b7178;
   display: grid;
   gap: 28px;
   grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.9fr);
@@ -52,9 +52,9 @@
 .logoMark {
   align-items: center;
   background: transparent;
-  border: 1px solid rgba(91, 68, 47, 0.14);
+  border: 1px solid rgba(57, 175, 178, 0.18);
   border-radius: 8px;
-  color: #866348;
+  color: #39afb2;
   display: inline-flex;
   font-family: "Avenir Next", Montserrat, "Segoe UI", sans-serif;
   font-size: 0.95rem;
@@ -66,7 +66,7 @@
 }
 
 .address {
-  color: #6a5a4c;
+  color: #3d8d90;
   font-size: 0.95rem;
   font-style: normal;
   line-height: 1.6;
@@ -100,7 +100,7 @@
 }
 
 .footerLink {
-  border: 1px solid rgba(91, 68, 47, 0.14);
+  border: 1px solid rgba(57, 175, 178, 0.16);
   border-radius: 8px;
   color: inherit;
   display: inline-flex;
@@ -113,8 +113,8 @@
     color 160ms ease;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.42);
-    border-color: rgba(91, 68, 47, 0.24);
+    background: rgba(201, 236, 227, 0.42);
+    border-color: rgba(11, 113, 120, 0.22);
   }
 }
 
@@ -136,7 +136,7 @@
 }
 
 .locationText {
-  color: #6a5a4c;
+  color: #3d8d90;
   line-height: 1.65;
   margin: 0;
 }
